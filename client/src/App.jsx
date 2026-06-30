@@ -9,9 +9,10 @@ import Loading from './components/student/Loading'
 import Educator from './pages/educator/Educator'
 import Dashboard from './pages/educator/Dashboard'
 import AddCourse from './pages/educator/AddCourse'
-import Mycourse from './pages/educator/MyCourses'
+import Mycourses from './pages/educator/MyCourses'
 import StudentsEnrolled from './pages/educator/StudentsEnrolled'
 import Navbar from './components/student/Navbar'
+import "quill/dist/quill.snow.css";
 
 const App = () => {
 
@@ -30,9 +31,9 @@ const App = () => {
       <Route path='/player/:courseId' element={<Player/>} />
       <Route path='/loading/:path' element={<Loading/>} />
       <Route path='/educator' element={<Educator/>} >
-           <Route path='educator' element={<Dashboard/>} />
+           <Route path='/educator' element={<Dashboard/>} />
            <Route path='add-course' element={<AddCourse/>} />
-           <Route path='my-course' element={<Mycourse/>} />
+           <Route path='my-courses' element={<Mycourses/>} />
            <Route path='student-enrolled' element={<StudentsEnrolled/>} />
 
 
